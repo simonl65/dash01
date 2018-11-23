@@ -1,6 +1,13 @@
-.cdLogoFull {
-    width: 89px;
-    height: 30px;
+.cdLogo {
+    &.full {
+        width: 89px;
+        height: 30px;
+    }
+
+    &.small {
+        width: 30px;
+        height: 30px;
+    }
 
     > svg {
         fill: white;

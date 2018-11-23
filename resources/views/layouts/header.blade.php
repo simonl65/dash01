@@ -4,15 +4,15 @@
             <span class="navbar-toggler-icon text-white"></span>
         </button>
         <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
         </button>
     @endauth
 
     <a class="navbar-brand" href="{{ url('/') }}">
-        @svg('svg/content-discovered-logo.svg', 'cdLogoFull');
-        {{-- <img class="navbar-brand-full" src="svg/content-discovered-logo.svg" width="89" height="25" alt="Logo">
-        <img class="navbar-brand-minimized" src="svg/logo-icon.svg" width="30" height="30" alt="Logo"> --}}
+        @svg('svg/content-discovered-logo.svg', 'navbar-brand-full cdLogo full')
+        @svg('svg/content-discovered-logo-icon.svg', 'navbar-brand-minimized cdLogo small')
     </a>
+
     <ul class="nav navbar-nav ml-auto mr-3">
 
         <!-- Authentication Links -->
@@ -22,8 +22,7 @@
             </li>
             <li class="nav-item">
                 @if (Route::has('register'))
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                @endif
+                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a> @endif
             </li>
         @else
             <li class="nav-item dropdown">
@@ -34,22 +33,22 @@
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item">
-                        {{ Auth::user()->name }}<br>
-                        <small class="text-muted">{{ Auth::user()->email }}</small>
-                    </a>
+                            {{ Auth::user()->name }}<br>
+                            <small class="text-muted">{{ Auth::user()->email }}</small>
+                        </a>
                     <a class="dropdown-item" href="/profile">
-                        <i class="fas fa-user"></i> Profile
-                    </a>
+                            <i class="fas fa-user"></i> Profile
+                        </a>
                     <div class="divider"></div>
                     <a class="dropdown-item" href="/password">
-                        <i class="fas fa-key"></i> Password
-                    </a>
+                            <i class="fas fa-key"></i> Password
+                        </a>
 
                     <div class="divider"></div>
 
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
-                    </a>
+                                <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
+                        </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>

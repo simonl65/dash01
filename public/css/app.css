@@ -11259,12 +11259,17 @@ a.text-dark:focus {
   }
 }
 
-.cdLogoFull {
+.cdLogo.full {
   width: 89px;
   height: 30px;
 }
 
-.cdLogoFull > svg {
+.cdLogo.small {
+  width: 30px;
+  height: 30px;
+}
+
+.cdLogo > svg {
   fill: white;
 }
 
