@@ -3,7 +3,7 @@
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link active" href="/home">
-                    <i class="nav-icon icon-speedometer"></i> Dashboard
+                    <i class="nav-icon fas fa-tachometer-alt"></i> Dashboard
                 </a>
             </li>
             <li class="nav-title">Settings</li>

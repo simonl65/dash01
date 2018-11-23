@@ -4,28 +4,29 @@ $body-bg: #f8fafc;
 
 // Typography
 $font-family-sans-serif: "Nunito", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+$font-size-base        : 0.9rem;
+$line-height-base      : 1.6;
 
 // Colors
-$blue: #3490dc;
+$blue  : #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
-$pink: #f66D9b;
-$red: #e3342f;
+$pink  : #f66D9b;
+$red   : #e3342f;
 $orange: #f6993f;
 $yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$green : #38c172;
+$teal  : #4dc0b5;
+$cyan  : #6cb2eb;
 
 // Content Discovered Brand Guidelines:
-$NavyBlue    : #18263D;   // rgba(33, 40, 60, 1);
-$Green       : #55A588;   // rgba(86, 164, 133, 1);
+$NavyBlue    : #18263D;  // rgba(33, 40, 60, 1);
+$Green       : #55A588;  // rgba(86, 164, 133, 1);
 $LightBlue   : #ADD5E3;  // rgba(173, 213, 227, 1);
 $Turquoise   : #64D7C4;  // rgba(100, 215, 196, 1);
-$BrightYellow: #FBC144;   // rgba(251, 193, 68, 1);
+$BrightYellow: #FBC144;  // rgba(251, 193, 68, 1);
 $LightGrey   : #C7C7C7;  // rgba(199, 199, 199, 1);
 
-$primary    : $NavyBlue;
-$secondary  : $Green;
+$primary  : $NavyBlue;
+$secondary: $Green;
+$highlight: $BrightYellow;
